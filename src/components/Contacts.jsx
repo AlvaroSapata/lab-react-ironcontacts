@@ -65,21 +65,27 @@ function Contacts() {
 
   return (
     <div>
-      <button onClick={addRandomContact}>Add Contact</button>
-      <button onClick={sortContactByName}>Sort by Name</button>
-      <button onClick={sortContactByPopularity}>Sort by Popularity</button>
+      <button className="boton" onClick={addRandomContact}>
+        Add Contact
+      </button>
+      <button className="boton" onClick={sortContactByName}>
+        Sort by Name
+      </button>
+      <button className="boton" onClick={sortContactByPopularity}>
+        Sort by Popularity
+      </button>
       {contactList.map((eachContact, index) => {
         // console.log(contactList);
         return (
-          <div key={eachContact.id}>
+          <div key={eachContact.id} className="container">
             <table>
               <thead>
                 <tr>
                   <th>Picture</th>
                   <th>Name</th>
                   <th>Popularity</th>
-                  <th>Won an Oscar</th>
-                  <th>Won an Emmy</th>
+                  <th>Oscar</th>
+                  <th>Emmy</th>
                 </tr>
               </thead>
               <tbody>
@@ -95,7 +101,14 @@ function Contacts() {
                   <td>{eachContact.popularity}</td>
                   <td>{eachContact.wonOscar ? "✅" : "❌"}</td>
                   <td>{eachContact.wonEmmy ? "✅" : "❌"}</td>
-                  <td><button onClick={() => deleteContact(index)}>Delete contact</button></td>
+                  <td>
+                    <button
+                      className="boton"
+                      onClick={() => deleteContact(index)}
+                    >
+                      Delete contact
+                    </button>
+                  </td>
                 </tr>
               </tbody>
             </table>

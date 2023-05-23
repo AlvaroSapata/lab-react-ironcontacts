@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color:bisque;
+  border: solid 5px rgb(221, 190, 153);
+  color: rgb(165, 142, 114);
+}
+
+.boton{
+  background-color: rgb(221, 190, 153);
+  color: rgb(252, 246, 241);
+  border-color: rgb(221, 190, 153);
+  border-radius: 5px;
+  margin: 0px 5px 15px 5px;
+  height: 35px;
+  width: 140px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+th{
+  width: 120px;
+  margin-top: 10px;
+}
+
+table{
+  border: solid 2px rgb(221, 190, 153);
+  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  margin-top: 0px;
+}
+
+img {
+  border-radius: 10px;
+  opacity: 0.85;
+  border: solid 2px rgb(167, 144, 116);
+}
